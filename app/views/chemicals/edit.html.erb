@@ -1,0 +1,24 @@
+<h1>Edit Chemical</h1>
+
+<%= form_with model: @chemical do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %> <br>
+
+    <%= f.label :epa %>
+    <%= f.text_field :epa %> <br>
+
+    <%= f.label :type %>
+    <%= f.text_field :pesticide_type %> <br>
+
+    <%= f.label :company %>
+    <%= f.text_field :company %> <br>
+
+    <%= f.label :amount %>
+    <%= f.number_field :amount%>
+    <%= f.label :unit %>
+    <%= f.text_field :unit %> <br>
+
+    <%= f.submit %>
+
+<% end %>

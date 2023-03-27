@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :records
-
+  resources :chemicals
   root "records#index"
 end
