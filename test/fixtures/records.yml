@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2023-03-29 15:54:28
+  location: MyString
+  location_type: MyString
+  location_size: MyString
+  chem_amount: 1
+  equipment: MyString
+  start_time: MyString
+  stop_time: MyString
+  wind_direction: MyString
+  wind_velocity: 1
+  temperature: 1
+  chemical: one
+
+two:
+  date: 2023-03-29 15:54:28
+  location: MyString
+  location_type: MyString
+  location_size: MyString
+  chem_amount: 1
+  equipment: MyString
+  start_time: MyString
+  stop_time: MyString
+  wind_direction: MyString
+  wind_velocity: 1
+  temperature: 1
+  chemical: two
