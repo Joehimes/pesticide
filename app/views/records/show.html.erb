@@ -1,1 +1,5 @@
 <h1><%= @record.user.name %></h1>
+
+<% @record_chemicals.each do |chem| %>
+    <h3><%= chem.chemical.name %></h3>
+<% end %>

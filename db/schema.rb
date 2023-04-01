@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_29_195837) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_30_200824) do
   create_table "chemicals", force: :cascade do |t|
     t.string "name"
     t.string "epa"
@@ -20,6 +20,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_195837) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "pesticide_type"
+  end
+
+  create_table "record_chemicals", force: :cascade do |t|
+    t.integer "record_id"
+    t.integer "chemical_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "records", force: :cascade do |t|
@@ -37,6 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_195837) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.integer "record_chemical_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -16,6 +16,9 @@
     <%= f.label :location_size %>
     <%= f.text_field :location_size %><br>
 
+    <%= f.label "Chemical Name" %>
+    <%= f.select :chemical, @chemicals.collect { |c| [c.name, c.id] } %><br>
+
     <%= f.label :chem_amount %>
     <%= f.number_field :chem_amount %><br>
 
